@@ -14,12 +14,15 @@ Este es un sistema básico de administración de personas (SAP) desarrollado con
 
 ## 📸 Capturas
 INDEX:
+
 ![image](https://github.com/user-attachments/assets/f113df95-1fb0-430e-b128-2118ee44ba4f)
 
 AGREGAR:
+
 ![image](https://github.com/user-attachments/assets/9022fdeb-1482-4e4f-8a7a-12cf148fee5a)
 
 EDITAR:
+
 ![image](https://github.com/user-attachments/assets/576ce7f6-9eb2-4f54-b386-f824742e42c3)
 
 
