@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Personas</title>
+</head>
+<body>
+    <h1>Sistema de Administración de Personas (SAP)</h1>
+    <div>
+        <p>Cantidad de Personas: {{total_persona}} </p>
+    </div>
+    <div>
+        <a href="/agregar">
+            <button type="button">Agregar Persona</button>
+        </a>
+    </div>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for persona in personas %}
+                <tr>
+                    <td>{{persona.id}}</td>
+                    <td>{{persona.nombre}}</td>
+                    <td>{{persona.apellido}}</td>
+                    <td>{{persona.email}}</td>
+                    <td><a href="ver/{{persona.id}}"><button>Ver</button></a></td>
+                    <td><a href="editar/{{persona.id}}"><button>Editar</button></a></td>
+                    <td><a href="eliminar/{{persona.id}}"><button>Eliminar</button></a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
